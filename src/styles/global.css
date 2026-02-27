@@ -4,10 +4,8 @@
 }
 /*
   -- font-family: "Gravitas One", serif;
-  -- font-family: "Kelly Slab", sans-serif;
   -- font-family: "Sixtyfour", sans-serif;
   -- font-family: "Big Shoulders Stencil", sans-serif;
-  -- font-family: "Micro 5 Charted", sans-serif;
 */
 
 
@@ -30,18 +28,47 @@ body {
 main {
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 3rem;
 	padding: 4rem 2rem;
 }
 
 #name {
-	font-size: clamp(3rem, 5vw, 5rem);
+	font-size: clamp(3rem, 5vw, 4rem);
 	font-family: "Gravitas One", serif;
 }
 
 #title {
-	font-size: clamp(1.5rem, 2vw, 3rem);
+	font-size: clamp(1.5rem, 2vw, 2rem);
 	font-family: "Big Shoulders Stencil", sans-serif;
+}
+
+#time-layer {
+	color: white;
+	font-family: "Sixtyfour", sans-serif;
+	padding: 2rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.875rem;
+}
+
+#timedisplay {
+	display: flex;
+	align-items: flex-start;
+	width: fit-content;
+	position: relative;
+}
+
+#time {
+	font-size: 3.4rem;
+}
+
+.period-layer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1rem;
+	padding-left: 0.4rem;
+  	height: 100%;
 }
 
 .live-status {
@@ -92,6 +119,37 @@ a img:hover,
 	display: inline-flex;
 	align-items: center;
 	gap: 0.5rem;
+}
+
+#music-note-content {
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+	max-width: 20rem;
+	mask-image: linear-gradient(
+		to right,
+    	transparent 0%,
+    	black 5%,
+    	black 95%,
+    	transparent 100%
+  	);
+}
+
+.marquee-track {
+	display: inline-flex;
+	align-items: center;
+	gap: 1rem;
+	animation: marquee 8s linear infinite;
+	will-change: transform;
+}
+
+.marquee-track:hover {
+	animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-33.33%); }
 }
 
 #music-note-content a {
