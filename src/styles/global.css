@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Gravitas+One&family=Kelly+Slab&family=Micro+5+Charted&family=Sixtyfour&display=swap');
 :root {
-	--color-ocean-blue: #83DBF2;
-	--color-ashy-black: #121212;
-	--color-white: #FFFFFF;
+	--color-deep-blue: #0ccdfd;
+	--bg: #121212;
+	--text: #FFFFFF;
 }
-/*
-  -- font-family: "Gravitas One", serif;
-  -- font-family: "Sixtyfour", sans-serif;
-  -- font-family: "Big Shoulders Stencil", sans-serif;
-*/
 
+[data-theme="light"] {
+	--bg: #f4f6f8;
+	--text: #111111;
+}
+
+[data-theme="light"] .status-icon,
+[data-theme="light"] .socials a,
+[data-theme="light"] .musicnote-icon,
+[data-theme="light"] #theme-icon {
+	filter: none;
+}
 
 * {
   	margin: 0;
@@ -23,8 +29,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: var(--color-ashy-black);
-  	color: var(--color-white);
+	background-color: var(--bg);
+  	color: var(--text);
 }
 
 main {
@@ -32,6 +38,25 @@ main {
 	flex-direction: column;
 	gap: 3rem;
 	padding: 4rem 2rem;
+}
+
+header {
+	position: fixed;
+	top: 1rem;
+	right: 0.75rem;
+	z-index: 100;
+}
+
+#theme-toggle {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+#theme-icon {
+  	width: 2rem;
+  	height: 2rem;
+  	filter: invert(1);
 }
 
 #name {
@@ -45,7 +70,7 @@ main {
 }
 
 #time-layer {
-	color: white;
+	color: var(--text);
 	font-family: "Sixtyfour", sans-serif;
 	padding: 2rem 0;
 	display: flex;
@@ -87,13 +112,9 @@ a {
   	transition: color 0.3s ease;
 }
 
-a:hover {
-  	color: var(--color-ocean-blue);
-}
-
 a img:hover,
 .status-icon:hover {
-  	filter: invert(25%) sepia(1) saturate(5) hue-rotate(173deg) brightness(97%) contrast(95%);
+	filter: invert(40%);
 }
 
 .status-item {
@@ -112,7 +133,7 @@ a img:hover,
 .status-icon {
   	width: 1.8rem;
   	height: 1.8rem;
-  	filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+  	filter: invert(1);
   	transition: filter 0.3s ease;
 	vertical-align: middle;
 }
@@ -121,6 +142,14 @@ a img:hover,
 	display: inline-flex;
 	align-items: center;
 	gap: 0.5rem;
+}
+
+.current-build {
+	color: var(--color-deep-blue);
+}
+
+.current-build:hover {
+	text-decoration: underline dotted;
 }
 
 #music-note-content {
@@ -145,6 +174,16 @@ a img:hover,
 	will-change: transform;
 }
 
+.song-title,
+.artist-name {
+	color: var(--text);
+}
+
+.song-title:hover,
+.artist-name:hover {
+	color: var(--color-deep-blue);
+}
+
 .marquee-track:hover {
 	animation-play-state: paused;
 }
@@ -163,7 +202,7 @@ a img:hover,
 .musicnote-icon {
 	width: 1rem;
   	height: 1rem;
-	filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+	filter: invert(1);
 }
 
 .socials {
@@ -174,7 +213,7 @@ a img:hover,
 
 .socials a {
   	display: inline-block;
-  	filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+  	filter: invert(1);
   	transition: filter 0.3s ease;
 }
 
