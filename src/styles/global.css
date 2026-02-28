@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Gravitas+One&family=Kelly+Slab&family=Micro+5+Charted&family=Sixtyfour&display=swap');
 :root {
 	--color-ocean-blue: #83DBF2;
+	--color-ashy-black: #121212;
+	--color-white: #FFFFFF;
 }
 /*
   -- font-family: "Gravitas One", serif;
@@ -21,8 +23,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: black;
-  	color: white;
+	background-color: var(--color-ashy-black);
+  	color: var(--color-white);
 }
 
 main {

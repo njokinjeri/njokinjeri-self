@@ -1,2 +1,2 @@
 import './ui/clock.ts';
-import './ui/weather.ts';
+import './ui/uptime.ts';
