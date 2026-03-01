@@ -1,3 +1,4 @@
+import './three/render.ts';
 import './ui/clock.ts';
 import './ui/uptime.ts';
 import moonIcon from "./assets/moon-icon.svg";

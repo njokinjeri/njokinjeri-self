@@ -123,11 +123,8 @@ a img:hover,
 	gap: 1rem;
 }
 
-#scene img {
-	width: 100%;
-  	max-width: 50rem;
-  	display: block;
-  	object-fit: contain;
+canvas#scene {
+	z-index: -10;
 }
 
 .status-icon {
