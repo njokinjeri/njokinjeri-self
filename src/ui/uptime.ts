@@ -1,6 +1,6 @@
 const uptimeEl =  document.getElementById("uptime-info") as HTMLParagraphElement;
 
-const launchDate = new Date("2026-02-28");
+const launchDate = new Date("2026-03-01");
 
 function updateUptime():void { 
     const now = new Date();
