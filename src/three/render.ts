@@ -16,7 +16,7 @@ function isDark(): boolean {
 
 const COLORS = {
 	dark:  { inner: 0xd0f0fd, outer: 0x7ab8cc, dust: 0x304050 },
-  	light: { inner: 0x0a7a9e, outer: 0x0a3e4b, dust: 0x2a5a6e },
+  	light: { inner: 0x0099cc, outer: 0x006688, dust: 0x004455 },
 };
 
 function getColors() {
