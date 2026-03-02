@@ -26,7 +26,7 @@ export function initScene(profile: DeviceProfile): SceneResult {
         0.1,
         200
     );
-    camera.position.z = 7.5;
+    camera.position.z = profile.cameraZ;
 
     window.addEventListener('resize', () => {
         const W = window.innerWidth;

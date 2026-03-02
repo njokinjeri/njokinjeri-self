@@ -8,6 +8,7 @@ export interface DeviceProfile {
     morphDur: number;
     groupOffset: { x: number; y: number};
     groupScale: number;
+    cameraZ: number;
 }
 
 export function getDeviceProfile(): DeviceProfile {
@@ -19,12 +20,13 @@ export function getDeviceProfile(): DeviceProfile {
 
     if (isMobile) return {
         tier: 'mobile',
-        nInner: 2000, nOuter: 1000, dustCount: 600,
+        nInner: 2000, nOuter: 4000, dustCount: 600,
         pixelRatio: Math.min(dpr, 2),
         pointSize: { inner: 0.024, outer: 0.018},
         morphDur: 1.4,
         groupOffset: { x: 0, y: 0 }, 
-        groupScale: 0.85,
+        groupScale: 1.4,
+        cameraZ: 7.5,
     };
 
     if (isTablet) return {
@@ -34,7 +36,9 @@ export function getDeviceProfile(): DeviceProfile {
         pointSize: { inner: 0.020, outer: 0.015},
         morphDur: 1.5,
         groupOffset: { x: 2.8, y: 0 },
-        groupScale: 1.0,
+        groupScale: 1.4,
+        cameraZ: 4.0,
+
     };
 
     return {
@@ -45,5 +49,6 @@ export function getDeviceProfile(): DeviceProfile {
         morphDur: 1.6,
         groupOffset: { x: 3.2, y: 0 },
         groupScale: 1.4,
+        cameraZ: 4.5,
     };
 }
