@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 
 export function sampleSurface(geometry: THREE.BufferGeometry, count: number): Float32Array {
-  const g   = geometry.toNonIndexed();
+  const g   = geometry.index !== null ? geometry.toNonIndexed() : geometry;
   const pos = g.attributes.position as THREE.BufferAttribute;
   const triCount = Math.floor(pos.count / 3);
   const out = new Float32Array(count * 3);

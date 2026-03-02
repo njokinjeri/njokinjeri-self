@@ -13,83 +13,85 @@
 			<img id="theme-icon" src="/src/assets/moon-icon.svg" alt="theme toggle">
 		</button>
 	</header>
-	<canvas id="scene"></canvas>
-    <main>
-		<section>
-			<h1 id="name">NJOKI NJERI</h1>
-			<h2 id="title">SOFTWARE DEVELOPER</h2>
-		</section>
-		<section id="time-layer">
-			<div id="timedisplay">
-				<p id="time"></p>
-				<div class="period-layer">
-					<span id="period"></span>
-					<span id="seconds"></span>
+	<div class="layout">
+		<canvas id="scene"></canvas>
+    	<main>
+			<section>
+				<h1 id="name">NJOKI NJERI</h1>
+				<h2 id="title">SOFTWARE DEVELOPER</h2>
+			</section>
+			<section id="time-layer">
+				<div id="timedisplay">
+					<p id="time"></p>
+					<div class="period-layer">
+						<span id="period"></span>
+						<span id="seconds"></span>
+					</div>
 				</div>
-			</div>
-			<span class="timezone">Africa/Nairobi</span>
-		</section>
-		<section class="live-status">
-			<div class="status-item" id="current-build">
-				<img class="status-icon" src="./src/assets/wrench-icon.svg" alt="">
-				<div class="status-content">
-					<span class="status-label">Current Experiment:</span>
-					<a href="https://github.com/njokinjeri/impractical-series" target="_blank" rel="noopener noreferrer">
-        				<span class="current-build">Impractical series</span>
-      				</a>
-    			</div>
-  			</div>
-			<div class="status-item uptime">
-				<img class="status-icon" src="./src/assets/time-history.svg" alt="">
-				<div class="status-content">
-					<p id="uptime-info">Uptime: </p>
-    			</div>
-  			</div>
-			<div class="status-item" id="earworm">
-    			<img class="status-icon" src="./src/assets/earpods-icon.svg" alt="">
-    			<div class="status-content" id="music-note-content">
-					<div class="marquee-track">
-						<a href="https://open.spotify.com/track/0D1OY0M5A0qD5HGBvFmFid?si=c3cff0420e8a42b2" target="_blank" rel="noopener noreferrer" class="music-link">
-							<span class="song-title">Go the Distance</span>
-      						<img class="musicnote-icon" src="./src/assets/musical-note.svg" alt="">
-      						<span class="artist-name">Roger Bart</span>
-      						<img class="musicnote-icon" src="./src/assets/musical-note.svg" alt="">
-    					</a>
-    					<a href="https://open.spotify.com/track/0D1OY0M5A0qD5HGBvFmFid?si=c3cff0420e8a42b2" target="_blank" rel="noopener noreferrer" class="music-link">
-      						<span class="song-title">Go the Distance</span>
-      						<img class="musicnote-icon" src="./src/assets/musical-note.svg" alt="">
-      						<span class="artist-name">Roger Bart</span>
-      						<img class="musicnote-icon" src="./src/assets/musical-note.svg" alt="">
-    					</a>
-    					<a href="https://open.spotify.com/track/0D1OY0M5A0qD5HGBvFmFid?si=c3cff0420e8a42b2" target="_blank" rel="noopener noreferrer" class="music-link">
-      						<span class="song-title">Go the Distance</span>
-      						<img class="musicnote-icon" src="./src/assets/musical-note.svg" alt="">
-      						<span class="artist-name">Roger Bart</span>
-      						<img class="musicnote-icon" src="./src/assets/musical-note.svg" alt="">
-    					</a>
-  					</div>
-    			</div>
-  			</div>
-			<div class="status-item" id="favorites">
-    			<img class="status-icon" src="./src/assets/swirl-icon.svg" alt="">
-    			<div class="status-content">
-      				<span class="status-label">Exploring:</span>
-      				<p>Pixels, Performance, Pineapples</p>
-    			</div>
-  			</div>
-		</section>
-		<section class="socials">
-			<a  href="https://github.com/njokinjeri" target="_blank" rel="noopener noreferrer">
-				<img src="./src/assets/github-icon.svg" alt="github icon">
-			</a>
-			<a  href="https://www.linkedin.com/in/njokinjeri/" target="_blank" rel="noopener noreferrer">
-				<img src="./src/assets/linkedin-icon.svg" alt="linkedin icon">
-			</a>
-			<a  href="mailto:njerinjoki33@gmail.com" title="Gmail">
-				<img src="./src/assets/email-icon.svg" alt="email icon">
-			</a>
-		</section>
-    </main>
+				<span class="timezone">Africa/Nairobi</span>
+			</section>
+			<section class="live-status">
+				<div class="status-item" id="current-build">
+					<img class="status-icon" src="./src/assets/wrench-icon.svg" alt="">
+					<div class="status-content">
+						<span class="status-label">Current Experiment:</span>
+						<a href="https://github.com/njokinjeri/impractical-series" target="_blank" rel="noopener noreferrer">
+        					<span class="current-build">Impractical series</span>
+      					</a>
+    				</div>
+  				</div>
+				<div class="status-item uptime">
+					<img class="status-icon" src="./src/assets/time-history.svg" alt="">
+					<div class="status-content">
+						<p id="uptime-info">Uptime: </p>
+    				</div>
+  				</div>
+				<div class="status-item" id="earworm">
+    				<img class="status-icon" src="./src/assets/earpods-icon.svg" alt="">
+    				<div class="status-content" id="music-note-content">
+						<div class="marquee-track">
+							<a href="https://open.spotify.com/track/0D1OY0M5A0qD5HGBvFmFid?si=c3cff0420e8a42b2" target="_blank" rel="noopener noreferrer" class="music-link">
+								<span class="song-title">Go the Distance</span>
+      							<img class="musicnote-icon" src="./src/assets/musical-note.svg" alt="">
+      							<span class="artist-name">Roger Bart</span>
+      							<img class="musicnote-icon" src="./src/assets/musical-note.svg" alt="">
+    						</a>
+    						<a href="https://open.spotify.com/track/0D1OY0M5A0qD5HGBvFmFid?si=c3cff0420e8a42b2" target="_blank" rel="noopener noreferrer" class="music-link">
+      							<span class="song-title">Go the Distance</span>
+      							<img class="musicnote-icon" src="./src/assets/musical-note.svg" alt="">
+      							<span class="artist-name">Roger Bart</span>
+      							<img class="musicnote-icon" src="./src/assets/musical-note.svg" alt="">
+    						</a>
+    						<a href="https://open.spotify.com/track/0D1OY0M5A0qD5HGBvFmFid?si=c3cff0420e8a42b2" target="_blank" rel="noopener noreferrer" class="music-link">
+      							<span class="song-title">Go the Distance</span>
+      							<img class="musicnote-icon" src="./src/assets/musical-note.svg" alt="">
+      							<span class="artist-name">Roger Bart</span>
+      							<img class="musicnote-icon" src="./src/assets/musical-note.svg" alt="">
+    						</a>
+  						</div>
+    				</div>
+  				</div>
+				<div class="status-item" id="favorites">
+    				<img class="status-icon" src="./src/assets/swirl-icon.svg" alt="">
+    				<div class="status-content">
+      					<span class="status-label">Exploring:</span>
+      					<p>Pixels, Performance, Pineapples</p>
+    				</div>
+  				</div>
+			</section>
+			<section class="socials">
+				<a  href="https://github.com/njokinjeri" target="_blank" rel="noopener noreferrer">
+					<img src="./src/assets/github-icon.svg" alt="github icon">
+				</a>
+				<a  href="https://www.linkedin.com/in/njokinjeri/" target="_blank" rel="noopener noreferrer">
+					<img src="./src/assets/linkedin-icon.svg" alt="linkedin icon">
+				</a>
+				<a  href="mailto:njerinjoki33@gmail.com" title="Gmail">
+					<img src="./src/assets/email-icon.svg" alt="email icon">
+				</a>
+			</section>
+    	</main>
+	</div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

@@ -33,11 +33,26 @@ body {
   	color: var(--text);
 }
 
+.layout {
+	min-height: 100vh;
+	display: flex;
+	position: relative;
+}
+
+canvas#scene {
+	position: absolute;
+	top: -14%;
+	right: 0;
+	z-index: -10;
+}
+
 main {
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
-	padding: 4rem 2rem;
+	padding: 2rem;
+	align-self: flex-end;
+	margin-top: 50vh;
 }
 
 header {
@@ -60,7 +75,7 @@ header {
 }
 
 #name {
-	font-size: clamp(3rem, 5vw, 4rem);
+	font-size: clamp(3rem, 3vw, 4rem);
 	font-family: "Gravitas One", serif;
 }
 
@@ -121,10 +136,6 @@ a img:hover,
 	display: flex;
 	align-items: center;
 	gap: 1rem;
-}
-
-canvas#scene {
-	z-index: -10;
 }
 
 .status-icon {
@@ -219,15 +230,19 @@ canvas#scene {
   	height: 2rem;
 }
 
-@media (min-width: 1024px) {
-	body {
-		flex-direction: row-reverse;
+
+@media (min-width: 768px) {
+	main {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 3rem;
+		padding: 2rem;
+		margin-top: 0;
 	}
 
-	main {
-		width: 45%;
-		display: flex;
-		justify-content: space-between;
+	canvas#scene {
+		inset: 0;
 	}
 }
-
